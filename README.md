@@ -38,8 +38,8 @@
 Uygulama `http://localhost:8001` adresinde çalışmaya başlayacaktır.
 
 ## 👥 Ekip
-*   **Fatıma Yaylı** - Sakarya Uygulamalı Bilimler Üniversitesi, Bilgisayar Mühendisliği
-*   **Muhammet Kuş** - [Ekip Arkadaşının Uzmanlık Alanı]
+*   **Fatıma Yaylı** - Bilgisayar Mühendisliği
+*   **Muhammet Kuş** - Elektrik Elektronik Mühendisliği
 
 ## 📄 Lisans
 Bu proje YZTA 5.0 Hackathon süresince eğitim ve geliştirme amacıyla hazırlanmıştır.
