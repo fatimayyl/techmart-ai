@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechMart AI | Müşteri Hizmetleri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar: id="sidebar" eklendi -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="brand">
+                    <div class="brand-icon">🤖</div>
+                    <div>
+                        <h1 class="brand-name">TechMart</h1>
+                        <span class="brand-sub">AI Asistan</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Hızlı Sorular</h3>
+                <div class="quick-actions">
+                    <button class="quick-btn" data-message="[Sipariş No] numaralı siparişim nerede?" id="quick-order">
+                        <span class="quick-icon">📦</span>
+                        <span>Sipariş Takibi</span>
+                    </button>
+                    <button class="quick-btn" data-message="[Ürün Adı] stokta var mı?" id="quick-stock">
+                        <span class="quick-icon">📋</span>
+                        <span>Stok Sorgusu</span>
+                    </button>
+                    <button class="quick-btn" data-message="[Kategori] kategorisindeki ürünleri listeler misin?"
+                        id="quick-products">
+                        <span class="quick-icon">🛍️</span>
+                        <span>Ürün Listesi</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Sağlık kontrolü için durum paneli eklendi -->
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Sistem Durumu</h3>
+                <div class="status-panel">
+                    <div class="status-item">
+                        <span class="status-dot" id="status-dot"></span>
+                        <span id="status-text">Bağlantı Kontrol Ediliyor...</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <p>YZTA 5.0 Hackathon</p>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-main">
+            <header class="chat-header">
+                <!-- Mobil menü butonu eklendi -->
+                <button class="menu-toggle" id="menu-toggle"
+                    style="background:none; border:none; cursor:pointer; font-size:20px; margin-right:10px;">☰</button>
+
+                <div class="header-info">
+                    <h2>TechMart Asistan</h2>
+                    <!-- id="header-status" eklendi -->
+                    <span class="header-status" id="header-status">Çevrimiçi</span>
+                </div>
+                <button id="clear-chat">🗑️</button>
+            </header>
+
+            <div class="chat-messages" id="chat-messages">
+                <div class="welcome-container" id="welcome-container">
+                    <h2 class="welcome-title">TechMart AI Asistan</h2>
+                    <p class="welcome-text">Merhaba! Size nasıl yardımcı olabilirim?</p>
+                    <div class="welcome-chips">
+                        <button class="chip" data-message="[Ürün Adı] için stok durumunu öğrenmek istiyorum.">📋 Stok
+                            Sorgula</button>
+                        <button class="chip" data-message="Merhaba, teknik bir konuda destek alabilir miyim?">👋
+                            Merhaba</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <div class="input-container">
+                    <textarea id="message-input" placeholder="Mesajınızı yazın..." rows="1"></textarea>
+                    <button class="send-btn" id="send-btn" disabled>🚀</button>
+                </div>
+                <div class="input-footer">
+                    <span>TechMart AI • Gemini ile güçlendirilmiştir</span>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
